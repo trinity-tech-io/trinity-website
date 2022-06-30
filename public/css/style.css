@@ -88,13 +88,13 @@ b {
     font-weight: 500;
 }
 
-::-moz-selection {
+/* ::-moz-selection {
   background-color: #2e3138;
   color: #fff; }
 
 ::selection {
   background-color: #2e3138;
-  color: #fff; }
+  color: #fff; } */
 
 
 /*====================
@@ -447,6 +447,20 @@ iframe {
 }
 .home-section-title {
     font-size: 60px;
+}
+.home-section-title>span.blue-graditext {
+    background: linear-gradient(180deg, #4376D9 26.54%, #FFFFFF 86.42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.home-section-title>span.pink-graditext {
+    background: linear-gradient(180deg, #B243D9 20.37%, #FFFFFF 90.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 .display-table-cell {
     display: table-cell;
@@ -1108,10 +1122,24 @@ textarea.form-control {
     display: inline-flex;
     padding-right: 180px;
 }
+.phone-img-wrapper>img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
 .phone-img-wrapper>img:last-child {
     position: absolute;
     left: 415px;
     top: 130px;
+}
+.phone-img-box>.back-light{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 100%);
+    filter: blur(20px);
+    border-radius: 300px;
+    top: 3%;
+    right: 3%;
 }
 .phone-img-box>.hide-box{
     position: absolute;
@@ -1120,7 +1148,6 @@ textarea.form-control {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
     bottom: 0;
 }
-
 /*=====================================
     18. RESPONSIVE
 ====================================*/

@@ -9,15 +9,18 @@ class Schema extends React.Component {
                 <div className="row">
                     <div className="col-lg-12 text-center">
                         <h1 className="home-section-title text-white">
-                            Building next-generation<br/>Web3 SDKs and Apps to<br/>let you own your data<br/>with Elastos.
+                            Building{' '}<span class="blue-graditext">next-generation</span><br/>
+                            Web3 SDKs and Apps to<br/>
+                            let you own your data<br/>
+                            with{' '}<span class="pink-graditext">Elastos</span>.
                         </h1>
                     </div>
                 </div>
             </div>
             <div class="phone-img-container">
                 <div class="phone-img-box">
+                    <div class="back-light"/>
                     <div class="phone-img-wrapper">
-                        <div style={{background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)'}}/>
                         <img src="images/phone1.png" alt=""/>
                         <img src="images/phone2.svg" alt=""/>
                     </div>
