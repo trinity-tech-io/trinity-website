@@ -1,5 +1,6 @@
 import React from 'react';
 import Schema from '../components/Home/Schema';
+import Summary from '../components/Home/Summary';
 
 const Home = () => {
     const styleVar = [
@@ -55,6 +56,8 @@ const Home = () => {
             </section>
 
             <Schema />
+
+            <Summary />
         </>
     );
 }

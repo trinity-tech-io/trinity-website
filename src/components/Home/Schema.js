@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Schema extends React.Component {
   render() {
   	return (
-        <section className="section section-lg bg-web-desc" id="schema">
+        <section className="section section-lg" id="schema" style={{paddingBottom: 0}}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center">

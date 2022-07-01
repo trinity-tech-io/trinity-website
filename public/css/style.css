@@ -259,6 +259,9 @@ iframe {
   3. BOOTSTRAP RESET
   ======================*/
 
+.text-center {
+    text-align: center;
+}
 
 /*--Text color--- */
 
@@ -1147,6 +1150,30 @@ textarea.form-control {
     height: 60%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
     bottom: 0;
+}
+
+/*=====================================
+    HOME-SUMMARY
+====================================*/
+.feature-tablet {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.feature-tablet>div.tablet-fill {
+    margin-top: 100%;
+}
+.feature-tablet>div.tablet-body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid white;
+    border-radius: 20%;
+    padding: 30%;
+    justify-content: center;
+    display: flex;
 }
 /*=====================================
     18. RESPONSIVE
