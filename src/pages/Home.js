@@ -54,10 +54,9 @@ const Home = () => {
                     </a>
                 </div>
             </section>
-
             <Schema />
-
-            <Summary />
+            <Summary type='sdk' />
+            <Summary type='app' />
         </>
     );
 }

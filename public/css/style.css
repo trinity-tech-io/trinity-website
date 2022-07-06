@@ -1114,6 +1114,7 @@ textarea.form-control {
 .phone-img-container {
     text-align: center;
     margin-top: 100px;
+    overflow: hidden;
 }
 .phone-img-box {
     position: relative;
@@ -1174,6 +1175,11 @@ textarea.form-control {
     padding: 30%;
     justify-content: center;
     display: flex;
+}
+@media (min-width: 500px) {
+    .pre-text {
+        white-space: pre
+    }
 }
 /*=====================================
     18. RESPONSIVE
