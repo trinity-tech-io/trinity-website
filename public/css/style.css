@@ -999,18 +999,32 @@ textarea.form-control {
 
 .footer {
     padding: 50px 0;
-    background-color: #272a33;
+    background: linear-gradient(360deg, #b243d970 0%, rgba(0, 0, 0, 0) 100%);
+    /* background-color: #272a33; */
 }
 
 .footer h4 {
     color: #ffffff;
 }
 
+.footer .text-muted {
+    color: #ffffff80 !important;
+}
+
+.footer .text-muted>p {
+    font-size: 12pt;
+}
+
+.footer-list {
+    line-height: 2;
+}
+
 .footer-list li a {
-    color: #98a0aa;
+    /* color: #98a0aa; */
+    color: #ffffff80;
     padding-top: 8px;
     display: inline-block;
-    font-size: 14px;
+    font-size: 12pt;
     transition: all .3s ease-in-out;
 }
 
@@ -1260,6 +1274,10 @@ textarea.form-control {
     .home-section-title {
         font-size: 28px;
         line-height: 36px;
+    }
+    .home-section-description {
+        font-size: 12pt;
+        font-weight: normal;
     }
     .vertical-content {
         display: inherit;

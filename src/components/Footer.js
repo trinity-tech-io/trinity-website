@@ -7,47 +7,52 @@ class Footer extends React.Component {
          <footer className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3 margin-t-20">
-                        <h4>DORSIN</h4>
+                    <div className="col-lg-4 margin-t-20">
+                        <img src='images/logo.svg' style={{marginBottom: 30}}/>
+                        <h4>Building the future with Elastos.</h4>
+                        <div className="text-muted margin-t-20">
+                            <p>Privacy Policy</p>
+                            <p>Terms of Service</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-2 margin-t-20">
+                        <h4>Community</h4>
                         <div className="text-muted margin-t-20">
                             <ul className="list-unstyled footer-list">
-                                <li><Link to="JavaScript:Void(0);">Home</Link></li>
-                                <li><Link to="JavaScript:Void(0);">About us</Link></li>
-                                <li><Link to="JavaScript:Void(0);">Careers</Link></li>
-                                <li><Link to="JavaScript:Void(0);">Contact us</Link></li>
+                                <li><Link to="#">Cyber Republic</Link></li>
+                                <li><Link to="#">Elastos.org</Link></li>
+                                <li><Link to="#">Elastos-info</Link></li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-3 margin-t-20">
-                        <h4>Information</h4>
+                    <div className="col-lg-2 margin-t-20">
+                        <h4>Resources</h4>
                         <div className="text-muted margin-t-20">
                             <ul className="list-unstyled footer-list">
-                                <li><Link to="JavaScript:Void(0);">Terms & Condition</Link></li>
-                                <li><Link to="JavaScript:Void(0);">About us</Link></li>
-                                <li><Link to="JavaScript:Void(0);">Jobs</Link></li>
-                                <li><Link to="JavaScript:Void(0);">Bookmarks</Link></li>
+                                <li><Link to="#">Mainchain</Link></li>
+                                <li><Link to="#">Smart Chain</Link></li>
+                                <li><Link to="#">ID Chain</Link></li>
+                                <li><Link to="#">Dev Portal</Link></li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-3 margin-t-20">
-                        <h4>Support</h4>
+                    <div className="col-lg-2 margin-t-20">
+                        <h4>Developers</h4>
                         <div className="text-muted margin-t-20">
                             <ul className="list-unstyled footer-list">
-                                <li><Link to="JavaScript:Void(0);">FAQ</Link></li>
-                                <li><Link to="JavaScript:Void(0);">Contact</Link></li>
-                                <li><Link to="JavaScript:Void(0);">Disscusion</Link></li>
+                                <li><Link to="#">Elastos Dev Portal</Link></li>
+                                <li><Link to="#">E-lab</Link></li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-3 margin-t-20">
-                        <h4>Subscribe</h4>
+                    <div className="col-lg-2 margin-t-20">
+                        <h4>GitHub</h4>
                         <div className="text-muted margin-t-20">
-                            <p>In an ideal world this text wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts.</p>
+                            <ul className="list-unstyled footer-list">
+                                <li><Link to="#">Trinity Tech</Link></li>
+                                <li><Link to="#">Elastos</Link></li>
+                            </ul>
                         </div>
-                        <form className="form subscribe">
-                            <input placeholder="Email" className="form-control" required />
-                            <Link to="JavaScript:Void(0);" className="submit"><i className="pe-7s-paper-plane"></i></Link>
-                        </form>
                     </div>
                 </div>
             </div>

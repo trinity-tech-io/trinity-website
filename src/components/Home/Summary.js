@@ -22,7 +22,7 @@ class Summary extends React.Component {
                             <h1 className="home-section-title text-white">
                                 {title}
                             </h1>
-                            <h4 className="text-white pre-text">
+                            <h4 className="home-section-description text-white pre-text">
                                 {description}
                             </h4>
                         </div>
@@ -38,7 +38,7 @@ class Summary extends React.Component {
                                                 <img src={`/images/features/${type}.svg`} style={{width: '100%'}}/>
                                             </div>
                                         </div>
-                                        <h4 className="text-white text-center">{type}</h4>
+                                        <h4 className="home-section-description text-white text-center">{type}</h4>
                                     </div>
                                 ))
                             }
