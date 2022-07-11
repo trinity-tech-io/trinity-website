@@ -13,23 +13,40 @@ class Navbar extends React.Component {
                     <i className="mdi mdi-menu"></i>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
-                    <ul className="navbar-nav navbar-center ml-auto" id="mySidenav">
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">Services</a>
+                    <ol class="nav-menu">
+                        <li class="menu-item">
+                            <a href="#0">Services</a>
+                            <ol class="sub-menu">
+                                <li class="menu-item"><a href="#0">APIs</a></li>
+                                <li class="menu-item"><a href="#0">Tools</a></li>
+                            </ol>
                         </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">SDKs</a>
+                        <li class="menu-item">
+                            <a href="#0">SDKs</a>
+                            <ol class="sub-menu">
+                                <li class="menu-item"><a href="#0">DID</a></li>
+                                <li class="menu-item"><a href="#0">Hive</a></li>
+                                <li class="menu-item"><a href="#0">Carrier</a></li>
+                                <li class="menu-item"><a href="#0">Wallet</a></li>
+                            </ol>
                         </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">Apps</a>
+                        <li class="menu-item">
+                            <a href="#0">Apps</a>
+                            <ol class="sub-menu">
+                                <li class="menu-item"><a href="#0">Essentials</a></li>
+                                <li class="menu-item"><a href="#0">Feeds</a></li>
+                                <li class="menu-item"><a href="#0">Pasar</a></li>
+                            </ol>
                         </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">About</a>
+                        <li class="menu-item">
+                            <a href="#0">About</a>
+                            <ol class="sub-menu">
+                                <li class="menu-item"><a href="#0">Team</a></li>
+                                <li class="menu-item"><a href="#0">Contact</a></li>
+                            </ol>
                         </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">English</a>
-                        </li>
-                    </ul>
+                        <li class="menu-item"><a href="#0">English</a></li>
+                    </ol>
                 </div>
             </div>
         </nav>
