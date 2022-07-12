@@ -31,7 +31,7 @@ class Summary extends React.Component {
                         <div className="row">
                             {
                                 featureTypes.map((type, _i)=>(
-                                    <div className="col-3" style={{paddingRight: '6%'}}>
+                                    <div className="col-3" style={{paddingRight: '6%'}} key={_i}>
                                         <div className="feature-tablet">
                                             <div className="tablet-fill"/>
                                             <div className="tablet-body" style={{padding: this.props.type == 'app' ? '23%' : '30%'}}>

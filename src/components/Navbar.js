@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
   render() {
@@ -13,39 +13,39 @@ class Navbar extends React.Component {
                     <i className="mdi mdi-menu"></i>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
-                    <ol class="nav-menu">
-                        <li class="menu-item">
+                    <ol className="nav-menu">
+                        <li className="menu-item">
                             <a href="#0">Services</a>
-                            <ol class="sub-menu">
-                                <li class="menu-item"><a href="#0">APIs</a></li>
-                                <li class="menu-item"><a href="#0">Tools</a></li>
+                            <ol className="sub-menu">
+                                <li className="menu-item"><a href="#0">APIs</a></li>
+                                <li className="menu-item"><a href="#0">Tools</a></li>
                             </ol>
                         </li>
-                        <li class="menu-item">
+                        <li className="menu-item">
                             <a href="#0">SDKs</a>
-                            <ol class="sub-menu">
-                                <li class="menu-item"><a href="#0">DID</a></li>
-                                <li class="menu-item"><a href="#0">Hive</a></li>
-                                <li class="menu-item"><a href="#0">Carrier</a></li>
-                                <li class="menu-item"><a href="#0">Wallet</a></li>
+                            <ol className="sub-menu">
+                                <li className="menu-item"><a href="#0">DID</a></li>
+                                <li className="menu-item"><a href="#0">Hive</a></li>
+                                <li className="menu-item"><a href="#0">Carrier</a></li>
+                                <li className="menu-item"><a href="#0">Wallet</a></li>
                             </ol>
                         </li>
-                        <li class="menu-item">
+                        <li className="menu-item">
                             <a href="#0">Apps</a>
-                            <ol class="sub-menu">
-                                <li class="menu-item"><a href="#0">Essentials</a></li>
-                                <li class="menu-item"><a href="#0">Feeds</a></li>
-                                <li class="menu-item"><a href="#0">Pasar</a></li>
+                            <ol className="sub-menu">
+                                <li className="menu-item"><a href="#0">Essentials</a></li>
+                                <li className="menu-item"><a href="#0">Feeds</a></li>
+                                <li className="menu-item"><a href="#0">Pasar</a></li>
                             </ol>
                         </li>
-                        <li class="menu-item">
-                            <a href="#0">About</a>
-                            <ol class="sub-menu">
-                                <li class="menu-item"><a href="#0">Team</a></li>
-                                <li class="menu-item"><a href="#0">Contact</a></li>
+                        <li className="menu-item">
+                            <a>About</a>
+                            <ol className="sub-menu">
+                                <li className="menu-item"><Link to="/team">Team</Link></li>
+                                <li className="menu-item"><a href="#0">Contact</a></li>
                             </ol>
                         </li>
-                        <li class="menu-item"><a href="#0">English</a></li>
+                        <li className="menu-item"><a href="#0">English</a></li>
                     </ol>
                 </div>
             </div>
