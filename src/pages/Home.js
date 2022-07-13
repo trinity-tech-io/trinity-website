@@ -6,7 +6,7 @@ import Summary from '../components/Home/Summary';
 const Home = () => {
     return (
         <>
-            <ConicGradiSection title="We build (on) Elastos." titleAlign="center"/>
+            <ConicGradiSection title="We build (on) Elastos." titleAlign="center" scrollDown={true}/>
             <Schema />
             <Summary type='sdk' />
             <Summary type='app' />

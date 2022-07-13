@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ConicGradiSection = (props) => {
-    const { titleAlign='left', title } = props
+    const { titleAlign='left', title, scrollDown=false } = props
     const styleVar = [
         {ang0: '180deg', ang1: '50deg', color2: '#B243D9', ang2: '140deg', ang3: '300deg' },
         {ang0: '60deg', ang1: '0deg', color2: '#4376D9', ang2: '150deg', ang3: '218deg' },
@@ -11,10 +11,13 @@ const ConicGradiSection = (props) => {
 
     React.useEffect(()=>{
         let tempIndex = styleIndex
-        setInterval(()=>{
+        const intervalID = setInterval(()=>{
             tempIndex++
             setStyleIndex(tempIndex%3)
         }, 4000) 
+        return ()=>{
+            clearInterval(intervalID)
+        }
     }, [])
 
     return (
@@ -46,11 +49,14 @@ const ConicGradiSection = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="navbar-nav">
-                <a href="#schema" className="nav-link">
-                    <div className='icon-scroll'/>
-                </a>
-            </div>
+            {
+                scrollDown &&
+                <div className="navbar-nav">
+                    <a href="#schema" className="nav-link">
+                        <div className='icon-scroll'/>
+                    </a>
+                </div>
+            }
         </section>
     );
 }

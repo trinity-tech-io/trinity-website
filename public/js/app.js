@@ -27,11 +27,11 @@
     }
     
     //Scrollspy
-	function initScrollspy() {
-		$("#navbarCollapse").scrollspy({
-		    offset:20
-		});
-	}
+	// function initScrollspy() {
+	// 	$("#navbarCollapse").scrollspy({
+	// 	    offset:20
+	// 	});
+	// }
 
 	// Magnific Popup
     function initMagnificPopup() {
@@ -81,8 +81,7 @@
 
     function init() {
         initNavbar();
-        initSticky();
-        initScrollspy();
+        // initScrollspy();
         initMagnificPopup();
         initContactForm();
         Waves.init();
@@ -90,7 +89,10 @@
 
     $(document).ready(function(){
         init(); 
+        initSticky();
     });
+
+    window.initMethod = init
 
     // init();
 

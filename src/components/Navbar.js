@@ -1,14 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const MenuLink = (props) => (
+    <Link {...props} onClick={(e)=>{e.target.blur()}}>{props.children}</Link>
+)
+
 class Navbar extends React.Component {
   render() {
   	return (
         <nav className="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
             <div className="container">
-                <a className="navbar-brand logo text-uppercase" href="/">
+                <Link className="navbar-brand logo text-uppercase" to="/">
                     <img src='images/logo.svg'/>
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <i className="mdi mdi-menu"></i>
                 </button>
@@ -41,7 +45,7 @@ class Navbar extends React.Component {
                         <li className="menu-item">
                             <a>About</a>
                             <ol className="sub-menu">
-                                <li className="menu-item"><Link to="/team">Team</Link></li>
+                                <li className="menu-item"><MenuLink to="/team">Team</MenuLink></li>
                                 <li className="menu-item"><a href="#0">Contact</a></li>
                             </ol>
                         </li>
