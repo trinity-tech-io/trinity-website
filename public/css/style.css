@@ -334,7 +334,22 @@ iframe {
     color: #212529 !important;
 }
 
-
+.btn-send {
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid #B243D9;
+    border-radius: 100px;
+    background: transparent;
+    color: white;
+    transition: all .2s;
+}
+.btn-send:hover {
+    color: white;
+    transform: unset;
+    background: #B243D9;
+    box-shadow: 0px 0px 12px #B243D9 !important;
+}
 /*======================
   4.NAVBAR
   ======================*/
@@ -1154,24 +1169,54 @@ iframe {
 =======================================*/
 
 .form-control {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     box-shadow: none !important;
     height: 50px;
     padding-left: 20px;
+    color: white;
     border: 1px solid #e0e0e0;
-    font-size: 14px;
+    border-color: #B243D9;
+    background: transparent;
+    border-radius: 15px;
 }
 
 .form-control:focus {
-    border-color: #ccc;
+    /* border-color: #ccc; */
+    color: white;
+    background: transparent;
 }
 
 textarea.form-control {
     height: auto;
     padding-top: 13.5px;
+    /* scrollbar-color: #d4aa70 #e4e4e4;
+    scrollbar-width: 5px; */
 }
+/* textarea.form-control::-webkit-scrollbar {
+    width: 8px
+}
+textarea.form-control::-webkit-scrollbar-track {
+    background-color: '#e4e4e4';
+    border-radius: 100px;
+}
+textarea.form-control::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: '#0000003b';
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5)
+} */
 
-
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #adb5bd;
+    opacity: 1; /* Firefox */
+}
+  
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #adb5bd;
+}
+  
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #adb5bd;
+}
 .error {
     margin: 8px 0px;
     display: none;
