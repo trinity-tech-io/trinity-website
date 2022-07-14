@@ -54,11 +54,6 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Poppins', sans-serif;
 }
 
-.h1,
-h1 {
-    font-size: 36px;
-}
-
 .h2,
 h2 {
     font-size: 30px;
@@ -128,7 +123,17 @@ b {
 .padding-b-10 {
     padding-bottom: 10px;
 }
+.padding-b-50 {
+    padding-bottom: 50px;
+}
 
+.padding-x-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.width-100vw {
+    width: 100vw;
+}
 .height-100vh {
     height: 100vh;
 }
@@ -259,10 +264,6 @@ iframe {
   3. BOOTSTRAP RESET
   ======================*/
 
-.text-center {
-    text-align: center;
-}
-
 /*--Text color--- */
 
 .text-muted {
@@ -349,6 +350,22 @@ iframe {
     transform: unset;
     background: #B243D9;
     box-shadow: 0px 0px 12px #B243D9 !important;
+}
+.btn-start {
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid white;
+    border-radius: 100px;
+    background: transparent;
+    color: white;
+    transition: all .2s;
+}
+.btn-start:hover {
+    color: black;
+    transform: unset;
+    background: white;
+    box-shadow: 0px 0px 12px white !important;
 }
 /*======================
   4.NAVBAR
@@ -1049,7 +1066,8 @@ iframe {
 .team-member {
     padding: 20px
 }
-.team-member>img{
+.no-user-select,
+.team-member>img {
     user-select: none;
     -webkit-user-drag: none;
     -moz-user-select: none;
@@ -1075,6 +1093,67 @@ iframe {
         margin-bottom: 10%;
     }
 } */
+
+/*======================================
+         10. SDKs
+========================================*/
+.face-container {
+    vertical-align: middle;
+    display: table-cell;
+}
+.face-case {
+    padding: 100px 5vw;
+    max-width: 800px;
+    margin: auto;
+}
+.face-box {
+    position: relative;
+    padding-bottom: calc(100% - 5vw);
+    height: 0px;
+}
+.face-box > .title-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    padding-bottom: 20%;
+}
+.face-box > .title-box > p {
+    margin-bottom: 0;
+}
+.face-box > .title-box > .title{
+    font-size: 12vw;
+    line-height: 0.8;
+}
+.face-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+    background-size: contain
+}
+.sdk-description {
+    max-width: 750px;
+    font-size: 16pt;
+    margin: auto;
+}
+.sdk-detail {
+    font-size: 14pt;
+}
+@media (min-width:800px){
+    .face-box > .title-box > .title {
+        font-size: 6rem;
+    }
+}
 /*=======================================
      11. OUR PROCESS
 =========================================*/
@@ -1283,7 +1362,18 @@ textarea.form-control::-webkit-scrollbar-thumb {
 .footer {
     padding: 50px 0;
     background: linear-gradient(360deg, #b243d970 0%, rgba(0, 0, 0, 0) 100%);
-    /* background-color: #272a33; */
+}
+.footer-bg-did {
+    background: linear-gradient(360deg, #3FFF7B70 0%, rgba(0, 0, 0, 0) 100%);
+}
+.footer-bg-hive {
+    background: linear-gradient(360deg, #FF8A0070 0%, rgba(0, 0, 0, 0) 100%);
+}
+.footer-bg-carrier {
+    background: linear-gradient(360deg, #4AA5FF70 0%, rgba(0, 0, 0, 0) 100%);
+}
+.footer-bg-wallet {
+    background: linear-gradient(360deg, #9000F470 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .footer h4 {

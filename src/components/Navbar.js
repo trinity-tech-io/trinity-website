@@ -28,7 +28,7 @@ class Navbar extends React.Component {
                         <li className="menu-item">
                             <a href="#0">SDKs</a>
                             <ol className="sub-menu">
-                                <li className="menu-item"><a href="#0">DID</a></li>
+                                <li className="menu-item"><MenuLink to="/did">DID</MenuLink></li>
                                 <li className="menu-item"><a href="#0">Hive</a></li>
                                 <li className="menu-item"><a href="#0">Carrier</a></li>
                                 <li className="menu-item"><a href="#0">Wallet</a></li>

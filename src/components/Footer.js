@@ -1,10 +1,19 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
-class Footer extends React.Component {
-  render() {
-  	return (
-         <footer className="footer">
+const Footer = () => {
+    const { pathname } = useLocation()
+    const footerBgTypes = ['did', 'hive', 'carrier', 'wallet']
+    let footerBgClass = ''
+    for(let i=0; i<footerBgTypes.length; i++) {
+        if(pathname.startsWith(`/${footerBgTypes[i]}`)){
+            footerBgClass = `footer-bg-${footerBgTypes[i]}`
+            break
+        }
+    }
+    return (
+        <footer className={`footer ${footerBgClass}`}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4 margin-t-20">
@@ -57,7 +66,6 @@ class Footer extends React.Component {
                 </div>
             </div>
         </footer>
-  	);
-  }
+    );
 }
 export default Footer;

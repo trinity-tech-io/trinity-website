@@ -1,5 +1,5 @@
 import React from 'react';
-import ConicGradiSection from '../components/ConicGradiSection';
+import ConicGradiSection from '../../components/ConicGradiSection';
 
 const Team = () => {
     const TeamMembers = [
