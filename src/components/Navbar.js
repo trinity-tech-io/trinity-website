@@ -30,7 +30,7 @@ class Navbar extends React.Component {
                             <ol className="sub-menu">
                                 <li className="menu-item"><MenuLink to="/did">DID</MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/hive">Hive</MenuLink></li>
-                                <li className="menu-item"><a href="#0">Carrier</a></li>
+                                <li className="menu-item"><MenuLink to="/carrier">Carrier</MenuLink></li>
                                 <li className="menu-item"><a href="#0">Wallet</a></li>
                             </ol>
                         </li>
