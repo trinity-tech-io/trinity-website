@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Team from '../pages/about/Team';
 import Contact from '../pages/about/Contact';
 import DID from '../pages/sdks/DID';
+import Hive from '../pages/sdks/Hive';
 import Layout from '../layout';
 
 // ----------------------------------------------------------------------
@@ -21,6 +22,7 @@ export default function Router() {
           <Route path="team" element={<Team />} />
           <Route path="contact" element={<Contact />} />
           <Route path="did" element={<DID />} />
+          <Route path="hive" element={<Hive />} />
         </Route>
       </Routes>
   )
