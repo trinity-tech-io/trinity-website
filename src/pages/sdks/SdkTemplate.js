@@ -17,9 +17,11 @@ const SdkTemplate = (props) => {
                 </div>
             </div>
             <div className="row justify-content-center padding-x-20" style={{marginBottom: 400}}>
-                <h1 className="text-white text-center" style={{paddingBottom: 20}}>
-                    {aboutQ}
-                </h1>
+                <div className="col-sm-12">
+                    <h1 className="text-white text-center" style={{paddingBottom: 20}}>
+                        {aboutQ}
+                    </h1>
+                </div>
                 <h3 className="text-white text-center sdk-description">
                     {
                         Array.isArray(aboutA)?

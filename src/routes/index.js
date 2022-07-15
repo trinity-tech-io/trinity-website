@@ -7,6 +7,7 @@ import Contact from '../pages/about/Contact';
 import DID from '../pages/sdks/DID';
 import Hive from '../pages/sdks/Hive';
 import Carrier from '../pages/sdks/Carrier';
+import Wallet from '../pages/sdks/Wallet';
 import Layout from '../layout';
 
 // ----------------------------------------------------------------------
@@ -25,6 +26,7 @@ export default function Router() {
           <Route path="did" element={<DID />} />
           <Route path="hive" element={<Hive />} />
           <Route path="carrier" element={<Carrier />} />
+          <Route path="wallet" element={<Wallet />} />
         </Route>
       </Routes>
   )
