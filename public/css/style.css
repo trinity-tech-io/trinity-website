@@ -1154,6 +1154,220 @@ iframe {
         font-size: 6rem;
     }
 }
+
+/*======================================
+         11. Apps
+========================================*/
+
+.app-face-case {
+    flex: 1.2;
+    padding: 100px 0;
+    max-width: 500px;
+    margin: auto;
+}
+.app-face-box {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0px;
+}
+.app-face-box > .title-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    left: 25%;
+    top: 10%;
+}
+.app-face-box > .title-box > p {
+    margin-bottom: 0;
+}
+.app-face-box > .title-box > .title{
+    font-size: 6.5vw;
+    line-height: 0.8;
+}
+.phone-img:after{
+    content: '';
+    border: 1px dashed #e0e0e0;
+    position: absolute;
+    width: 67%;
+    left: 65%;
+    top: 50px;
+}
+.phone-view-case {
+    flex: 0.8;
+    padding: 10vw 7vw;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+.phone-view-box {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-flex;
+    position: relative;
+}
+.phone-view-box>img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.phone-view-case .hide-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 70%);
+}
+.blur-back {
+    opacity: 0.5;
+    filter: blur(6.5vw);
+    border-radius: 4vw;
+    z-index: -1;
+    position: absolute;
+    width: 80%;
+}
+.purple-box {
+    background: #B243D9;
+    top: -6%;
+    bottom: 20%;
+    right: -10%;
+}
+.blue-box {
+    background: #0350C5;
+    top: 20%;
+    bottom: -6%;
+    left: -15%;
+}
+
+.spec-container {
+    flex: 1;
+    margin: 10vw 0px;
+    padding: 9% 0px;
+    display: inline-flex;
+    justify-content: end;
+}
+.spec-box {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 8%;
+    align-items: end;
+}
+.spec-tab {
+    height: calc(100% / 3);
+    background: linear-gradient(90deg, rgb(47, 47, 47) 0%, rgb(0, 0, 0) 100%);
+    border-radius: 2vw;
+    width: 95%;
+    padding: 5%;
+    transition: width .2s;
+    cursor: pointer;
+}
+.spec-tab:hover {
+    width: 100%;
+}
+.spec-tab.active {
+    width: 100%;
+    background: linear-gradient(90deg, #B243D9 0%, #000000 100%);
+}
+.spec-tab-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.spec-tab-content>h3 {
+    font-size: 3.5vw;
+    flex: 1;
+}
+.spec-tab-content>span {
+    font-size: 2.5vw;
+}
+.EE-mark {
+    width: 50%;
+    max-width: 300px;
+}
+.EE-title {
+    padding-top: 4%;
+    font-size: 5vw;
+}
+.btn-apple,
+.btn-play {
+    width: auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    transition: all .2s;
+}
+.btn-apple>img:first-child {
+    padding-right: 10px;
+    width: 25%;
+}
+.btn-apple>img:last-child {
+    width: 75%;
+}
+.btn-play>div:last-child {
+    text-align: left;
+    width: 72%;
+}
+.btn-play>img:first-child {
+    padding-right: 10px;
+    width: 28%;
+}
+.btn-apple:hover,
+.btn-play:hover {
+    /* color: black;
+    background: white; */
+    transform: unset;
+    box-shadow: 0px 0px 12px white !important;
+}
+.app-download {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.app-download .app-store {
+    display: flex;
+    gap: 5%;
+}
+.app-download .app-store.apple {
+    justify-content: end;
+}
+.app-download .app-store.gplay {
+    justify-content: start;
+}
+@media (max-width: 1199px){
+    .spec-container {
+        padding: 0
+    }
+}
+@media (min-width:600px){
+    .EE-title {
+        font-size: 30px;
+    }
+}
+@media (min-width:800px){
+    .spec-tab-content>h3 {
+        font-size: 25pt;
+    }
+    .spec-tab-content>span {
+        font-size: 15pt;
+    }
+}
+@media (min-width:992px){
+    .blur-back {
+        filter: blur(65px);
+    }
+    .app-face-box > .title-box {
+        left: 7.5rem;
+    }
+    .app-face-box > .title-box > .title {
+        font-size: 4.5rem;
+    }
+}
 /*=======================================
      11. OUR PROCESS
 =========================================*/
@@ -1375,6 +1589,10 @@ textarea.form-control::-webkit-scrollbar-thumb {
 .footer-bg-wallet {
     background: linear-gradient(360deg, #9000F470 0%, rgba(0, 0, 0, 0) 100%);
 }
+.footer-bg-essentials {
+    background: linear-gradient(360deg, #FFFFFF70 0%, rgba(0, 0, 0, 0) 100%);;
+}
+
 
 .footer h4 {
     color: #ffffff;
@@ -1730,6 +1948,12 @@ textarea.form-control::-webkit-scrollbar-thumb {
     }
     .contact-title {
         text-align: left;
+    }
+    .app-download .app-store {
+        display: inline-flex;
+    }
+    .app-download .app-store h3 {
+        font-size: 18px;
     }
 }
 
