@@ -1,6 +1,21 @@
 import React from 'react';
 
 const Essentials = () => {
+    const specTypes = [
+        {
+            'title': 'Ownership',
+            'description': ['Manage your', 'personal Hive storage']
+        },
+        {
+            'title': 'Identity',
+            'description': ['W3C-compliant', 'DIDs (Digital Identities)']
+        },
+        {
+            'title': 'Scalable',
+            'description': ['More than 15 built-in', 'networks and Ledger support']
+        }
+    ]
+    const [specTab, setSpecTab] = React.useState(0)
     return (
         <div className="container">
             <div className="face-container height-100vh"  style={{display: 'flex'}}>
@@ -33,9 +48,13 @@ const Essentials = () => {
                 </div>
             </div>
             <div className="face-container" style={{display: 'flex'}}>
-                <div className="phone-view-case" style={{padding: '10vw 0', flex: 1, justifyContent: 'end'}}>
-                    <div className="phone-view-box" style={{maxWidth: '70%'}}>
-                        <img src="images/apps/phone-2.png"/>
+                <div className="phone-view-case for-spec">
+                    <div className="phone-view-box for-spec">
+                        {
+                            specTypes.map((_, _i)=>(
+                                <img className={_i===specTab?'active':''} src={`images/apps/phone-${_i+1}.png`} key={_i}/>
+                            ))
+                        }
                         <div className="blur-back purple-box"/>
                         <div className="blur-back blue-box"/>
                     </div>
@@ -43,13 +62,13 @@ const Essentials = () => {
                 <div className="spec-container">
                     <div className="spec-box">
                         {
-                            Array(3).fill(0).map((_, index)=>(
-                                <div className={`spec-tab ${index===0?'active':''}`}>
+                            specTypes.map((type, _i)=>(
+                                <div className={`spec-tab ${_i===specTab?'active':''}`} onClick={()=>{setSpecTab(_i)}} key={_i}>
                                     <div className="spec-tab-content">
-                                        <h3 className="text-white">Ownership</h3>
+                                        <h3 className="text-white">{type.title}</h3>
                                         <span class="text-white">
-                                            Manage your<br/>
-                                            personal Hive storage
+                                            {type.description[0]}<br/>
+                                            {type.description[1]}
                                         </span>
                                     </div>
                                 </div>
