@@ -3,16 +3,16 @@ import React from 'react';
 const Feeds = () => {
     const specTypes = [
         {
-            'title': 'Ownership',
-            'description': ['Manage your', 'personal Hive storage']
+            'title': 'Elastos Decentralized Identifiers (DIDs)',
+            'description': 'enable users to sign into and operate across applications with a single account from which they fully control the data they generate.'
         },
         {
-            'title': 'Identity',
-            'description': ['W3C-compliant', 'DIDs (Digital Identities)']
+            'title': 'Verifiable Credentials (VCs)',
+            'description': 'produce social graphs using specified formats and data models that inform the cryptographic representation and verification of assertions.'
         },
         {
-            'title': 'Scalable',
-            'description': ['More than 15 built-in', 'networks and Ledger support']
+            'title': 'Decentralized Web Nodes (DWN)',
+            'description': 'the Hive network and blockchain provide a decentralized mechanism to store generated data and support communications between users and applications.'
         }
     ]
     const [specTab, setSpecTab] = React.useState(0)
@@ -45,6 +45,22 @@ const Feeds = () => {
                     <p className="text-white text-center" style={{fontSize: '14pt'}}>
                         Feeds employs three key tech components to fully align its platform with web5 principles:
                     </p>
+                </div>
+                <div className="col-sm-12 padding-t-15">
+                    <div className="row">
+                        {
+                            specTypes.map((item, _i)=>(
+                                <div className="col-sm-4" style={{marginBottom: '20px'}}>
+                                    <div className="card card-custom">
+                                        <div className="card-body text-white">
+                                            <h4 className="text-center font-weight-bold card-title">{item.title}</h4>
+                                            <p>{item.description}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
             
