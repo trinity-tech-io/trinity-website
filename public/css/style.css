@@ -1101,6 +1101,10 @@ iframe {
     vertical-align: middle;
     display: table-cell;
 }
+.face-container.for-feeds {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .face-case {
     padding: 100px 5vw;
     max-width: 800px;
@@ -1208,6 +1212,9 @@ iframe {
     flex: 1;
     justify-content: end;
 }
+.for-feeds .phone-view-case.for-spec {
+    justify-content: center
+}
 .phone-view-box {
     max-width: 100%;
     max-height: 100%;
@@ -1260,6 +1267,12 @@ iframe {
     bottom: -6%;
     left: -15%;
 }
+.for-feeds .purple-box {
+    background: #0350C5;
+}
+.for-feeds .blue-box {
+    background: #B243D9;
+}
 
 .spec-container {
     flex: 1;
@@ -1267,6 +1280,9 @@ iframe {
     padding: 9% 0px;
     display: inline-flex;
     justify-content: end;
+}
+.for-feeds .spec-container {
+    margin: 6vw 0px;
 }
 .spec-box {
     display: flex;
@@ -1306,6 +1322,10 @@ iframe {
 .EE-mark {
     width: 50%;
     max-width: 300px;
+}
+.Feeds-mark {
+    width: 30%;
+    max-width: 200px;
 }
 .EE-title {
     padding-top: 4%;
@@ -1357,6 +1377,9 @@ iframe {
 }
 .app-download .app-store.gplay {
     justify-content: start;
+}
+.for-feeds .app-download .app-store {
+    justify-content: center;
 }
 .card-custom {
     background: transparent;
@@ -1623,7 +1646,9 @@ textarea.form-control::-webkit-scrollbar-thumb {
 .footer-bg-essentials {
     background: linear-gradient(360deg, #FFFFFF70 0%, rgba(0, 0, 0, 0) 100%);;
 }
-
+.footer-bg-feeds {
+    background: linear-gradient(360deg, #7624FE70 0%, rgba(0, 0, 0, 0) 100%);;
+}
 
 .footer h4 {
     color: #ffffff;
@@ -1985,6 +2010,13 @@ textarea.form-control::-webkit-scrollbar-thumb {
     }
     .app-download .app-store h3 {
         font-size: 18px;
+    }
+    .face-container.for-feeds {
+        flex-direction: column;
+    }
+    .for-feeds .phone-view-box.for-spec {
+        height: 500px;
+        justify-content: center;
     }
 }
 
