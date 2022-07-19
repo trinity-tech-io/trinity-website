@@ -30,7 +30,7 @@ const Essentials = () => {
                 </div>
                 <div className="phone-view-case">
                     <div className="phone-view-box">
-                        <img src="images/apps/phone.png"/>
+                        <img className="no-user-select" src="images/apps/phone-EE.png"/>
                         <div className="hide-box"/>
                     </div>
                 </div>

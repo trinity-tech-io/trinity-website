@@ -9,6 +9,7 @@ import Hive from '../pages/sdks/Hive';
 import Carrier from '../pages/sdks/Carrier';
 import Wallet from '../pages/sdks/Wallet';
 import Essentials from '../pages/apps/Essentials';
+import Feeds from '../pages/apps/Feeds';
 import Layout from '../layout';
 
 // ----------------------------------------------------------------------
@@ -29,6 +30,7 @@ export default function Router() {
           <Route path="carrier" element={<Carrier />} />
           <Route path="wallet" element={<Wallet />} />
           <Route path="essentials" element={<Essentials />} />
+          <Route path="feeds" element={<Feeds />} />
         </Route>
       </Routes>
   )
