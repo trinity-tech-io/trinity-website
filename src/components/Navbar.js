@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 
 const MenuLink = (props) => (
     <Link {...props} onClick={(e)=>{e.target.blur()}}>{props.children}</Link>
@@ -31,34 +31,34 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <ol className="nav-menu">
                         <li className="menu-item">
-                            <a href="#0">Services</a>
+                            <a><Trans>Services</Trans></a>
                             <ol className="sub-menu">
-                                <li className="menu-item"><a href="#0">APIs</a></li>
-                                <li className="menu-item"><a href="#0">Tools</a></li>
+                                <li className="menu-item"><a href="#0"><Trans>APIs</Trans></a></li>
+                                <li className="menu-item"><a href="#0"><Trans>Tools</Trans></a></li>
                             </ol>
                         </li>
                         <li className="menu-item">
-                            <a href="#0">SDKs</a>
+                            <a><Trans>SDKs</Trans></a>
                             <ol className="sub-menu">
-                                <li className="menu-item"><MenuLink to="/did">DID</MenuLink></li>
-                                <li className="menu-item"><MenuLink to="/hive">Hive</MenuLink></li>
-                                <li className="menu-item"><MenuLink to="/carrier">Carrier</MenuLink></li>
-                                <li className="menu-item"><MenuLink to="/wallet">Wallet</MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/did"><Trans>DID</Trans></MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/hive"><Trans>Hive</Trans></MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/carrier"><Trans>Carrier</Trans></MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/wallet"><Trans>Wallet</Trans></MenuLink></li>
                             </ol>
                         </li>
                         <li className="menu-item">
-                            <a href="#0">Apps</a>
+                            <a><Trans>Apps</Trans></a>
                             <ol className="sub-menu">
-                                <li className="menu-item"><MenuLink to="/essentials">Essentials</MenuLink></li>
-                                <li className="menu-item"><MenuLink to="/feeds">Feeds</MenuLink></li>
-                                <li className="menu-item"><MenuLink to="/pasar">Pasar</MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/essentials"><Trans>Essentials</Trans></MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/feeds"><Trans>Feeds</Trans></MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/pasar"><Trans>Pasar</Trans></MenuLink></li>
                             </ol>
                         </li>
                         <li className="menu-item">
-                            <a>About</a>
+                            <a><Trans>About</Trans></a>
                             <ol className="sub-menu">
-                                <li className="menu-item"><MenuLink to="/team">Team</MenuLink></li>
-                                <li className="menu-item"><MenuLink to="/contact">Contact</MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/team"><Trans>Team</Trans></MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/contact"><Trans>Contact</Trans></MenuLink></li>
                             </ol>
                         </li>
                         <li className="menu-item">

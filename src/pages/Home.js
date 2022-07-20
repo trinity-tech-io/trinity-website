@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <>
-            <ConicGradiSection title="We build (on) Elastos." titleAlign="center" scrollDown={true}/>
+            <ConicGradiSection title={<Trans>We build (on) Elastos.</Trans>} titleAlign="center" scrollDown={true}/>
             <Schema />
             <Summary type='sdk' />
             <Summary type='app' />
