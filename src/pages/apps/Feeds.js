@@ -15,7 +15,6 @@ const Feeds = () => {
             'description': 'the Hive network and blockchain provide a decentralized mechanism to store generated data and support communications between users and applications.'
         }
     ]
-    const [specTab, setSpecTab] = React.useState(0)
     return (
         <div className="container">
             <div className="face-container height-100vh"  style={{display: 'flex'}}>

@@ -10,6 +10,7 @@ import Carrier from '../pages/sdks/Carrier';
 import Wallet from '../pages/sdks/Wallet';
 import Essentials from '../pages/apps/Essentials';
 import Feeds from '../pages/apps/Feeds';
+import Pasar from '../pages/apps/Pasar';
 import Layout from '../layout';
 
 // ----------------------------------------------------------------------
@@ -31,6 +32,7 @@ export default function Router() {
           <Route path="wallet" element={<Wallet />} />
           <Route path="essentials" element={<Essentials />} />
           <Route path="feeds" element={<Feeds />} />
+          <Route path="pasar" element={<Pasar />} />
         </Route>
       </Routes>
   )

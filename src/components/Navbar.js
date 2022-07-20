@@ -39,7 +39,7 @@ class Navbar extends React.Component {
                             <ol className="sub-menu">
                                 <li className="menu-item"><MenuLink to="/essentials">Essentials</MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/feeds">Feeds</MenuLink></li>
-                                <li className="menu-item"><a href="#0">Pasar</a></li>
+                                <li className="menu-item"><MenuLink to="/pasar">Pasar</MenuLink></li>
                             </ol>
                         </li>
                         <li className="menu-item">

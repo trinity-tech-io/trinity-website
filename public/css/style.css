@@ -335,7 +335,8 @@ iframe {
     color: #212529 !important;
 }
 
-.btn-send {
+.btn-send,
+.btn-browse {
     width: auto;
     padding-left: 50px;
     padding-right: 50px;
@@ -345,7 +346,8 @@ iframe {
     color: white;
     transition: all .2s;
 }
-.btn-send:hover {
+.btn-send:hover,
+.btn-browse:hover {
     color: white;
     transform: unset;
     background: #B243D9;
@@ -366,6 +368,13 @@ iframe {
     transform: unset;
     background: white;
     box-shadow: 0px 0px 12px white !important;
+}
+.btn-browse {
+    border-color: #FF5082;
+}
+.btn-browse:hover {
+    background: #FF5082;
+    box-shadow: 0px 0px 12px #FF5082 !important;
 }
 /*======================
   4.NAVBAR
@@ -1393,9 +1402,50 @@ iframe {
 .card-custom p {
     margin-bottom: 0;
 }
+.nft-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    margin: 10% 0;
+    gap: 30px;
+    position: relative;
+}
+.nft-section.left-box > .hide-box{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    top: 90%;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.nft-section.right-box > .hide-box{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    bottom: 90%;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.pasar-box {
+    display: flex;
+    align-items: center;
+}
+.pasar-box img.pasar-logo {
+    width: 100%;
+    max-width: 250px;
+}
+.pasar-box .pasar-title {
+    padding: 25px 0 40px;
+}
 @media (max-width: 1199px){
     .spec-container {
         padding: 0
+    }
+}
+@media (min-width:576px) {
+    .nft-section.left-box {
+        padding-top: 100%;
+    }
+    .nft-section.right-box {
+        height: 100%;
     }
 }
 @media (min-width:600px){
@@ -1648,6 +1698,9 @@ textarea.form-control::-webkit-scrollbar-thumb {
 }
 .footer-bg-feeds {
     background: linear-gradient(360deg, #7624FE70 0%, rgba(0, 0, 0, 0) 100%);;
+}
+.footer-bg-pasar {
+    background: linear-gradient(360deg, #FF508270 0%, rgba(0, 0, 0, 0) 100%);;
 }
 
 .footer h4 {
