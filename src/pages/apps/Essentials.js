@@ -66,7 +66,7 @@ const Essentials = () => {
                                 <div className={`spec-tab ${_i===specTab?'active':''}`} onClick={()=>{setSpecTab(_i)}} key={_i}>
                                     <div className="spec-tab-content">
                                         <h3 className="text-white">{type.title}</h3>
-                                        <span class="text-white">
+                                        <span className="text-white">
                                             {type.description[0]}<br/>
                                             {type.description[1]}
                                         </span>

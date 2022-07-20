@@ -1,9 +1,13 @@
 import React from 'react';
+import { useTranslation, Trans } from "react-i18next";
+
 import ConicGradiSection from '../components/ConicGradiSection';
 import Schema from '../components/Home/Schema';
 import Summary from '../components/Home/Summary';
 
 const Home = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <ConicGradiSection title="We build (on) Elastos." titleAlign="center" scrollDown={true}/>

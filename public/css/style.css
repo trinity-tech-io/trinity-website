@@ -580,6 +580,7 @@ iframe {
 .nav-menu .sub-menu li {
     font-size:.9em;
 }
+.nav-menu .sub-menu li.active,
 .nav-menu .sub-menu li:hover,
 .nav-menu .sub-menu li a:focus {
     background: rgba(60, 60, 60, 0.3);
@@ -588,6 +589,7 @@ iframe {
     bottom:5px;
     height:1px;
 }
+.nav-menu .sub-menu li.active::after,
 .nav-menu .sub-menu li a:hover::after,
 .nav-menu .sub-menu li a:focus::after {
     width:15px;

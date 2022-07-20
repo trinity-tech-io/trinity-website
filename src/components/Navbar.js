@@ -1,12 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 
 const MenuLink = (props) => (
     <Link {...props} onClick={(e)=>{e.target.blur()}}>{props.children}</Link>
 )
 
-class Navbar extends React.Component {
-  render() {
+const Navbar = () => {
+    const languageTypes = [{value: 'en', name: 'English'}, {value: 'cn', name: '中文'}]
+    const { i18n } = useTranslation();
+    const [language, setLanguage] = React.useState("en");
+
+    const handleLangChange = (e) => {
+        const lang = e.target.getAttribute('value');
+        console.log(lang);
+        setLanguage(lang);
+        i18n.changeLanguage(lang);
+    };
+    const currentLngId = Math.max(languageTypes.findIndex(item=>item.value==language), 0)
+
   	return (
         <nav className="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
             <div className="container">
@@ -49,13 +61,21 @@ class Navbar extends React.Component {
                                 <li className="menu-item"><MenuLink to="/contact">Contact</MenuLink></li>
                             </ol>
                         </li>
-                        <li className="menu-item"><a href="#0">English</a></li>
+                        <li className="menu-item">
+                            <a>{languageTypes[currentLngId].name}</a>
+                            <ol className="sub-menu">
+                                {
+                                    languageTypes.map((lng, _i)=>(
+                                        <li className={lng.value===language ? 'active' : ''} key={_i}><a value={lng.value} onClick={handleLangChange}>{lng.name}</a></li>
+                                    ))
+                                }
+                            </ol>
+                        </li>
                     </ol>
                 </div>
             </div>
         </nav>
   	);
-  }
 }
 
 export default Navbar;
