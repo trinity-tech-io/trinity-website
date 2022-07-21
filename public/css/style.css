@@ -1127,15 +1127,23 @@ iframe {
 .face-case {
     padding: 100px 5vw;
     max-width: 800px;
+    max-height: 800px;
     margin: auto;
+    height: 100%;
 }
 .face-box {
     position: relative;
-    padding-bottom: calc(100% - 5vw);
-    height: 0px;
+    height: 100%;
+    /* padding-bottom: calc(100% - 5vw);
+    height: 0px; */
+}
+.face-box > .img-wrapper {
+    width: 100%;
+    height: 100%;
 }
 .face-box > .title-box {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     display: flex;

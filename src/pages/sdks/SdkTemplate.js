@@ -1,4 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const SdkTemplate = (props) => {
     const { type='', aboutQ='', aboutA='' } = props
@@ -8,7 +10,12 @@ const SdkTemplate = (props) => {
             <div className="face-container width-100vw height-100vh">
                 <div className="face-case">
                     <div className="face-box">
-                        <div className="face-img" style={{ background: `url(/images/sdks/${type}-1.svg) center center / contain no-repeat` }}/>
+                        <LazyLoadImage 
+                            className="face-img"
+                            src={`images/sdks/${type}-1.svg`}
+                            effect="blur" 
+                            wrapperClassName='img-wrapper'
+                        />
                         <div className="title-box">
                             <p>SDK</p>
                             <h1 className="title no-user-select">{type}</h1>
@@ -37,7 +44,13 @@ const SdkTemplate = (props) => {
             </div>
             <div className="row justify-content-center padding-x-20" style={{marginBottom: 250}}>
                 <div className="col-sm-12 text-center padding-b-50">
-                    <img className="no-user-select" src={`/images/sdks/${type}-2.svg`}/>
+                    <LazyLoadImage 
+                        className="no-user-select"
+                        src={`/images/sdks/${type}-2.svg`}
+                        effect="blur" 
+                        wrapperClassName='img-wrapper'
+                    />
+                    {/* <img className="no-user-select" src={`/images/sdks/${type}-2.svg`}/> */}
                 </div>
                 <div className="col-sm-12">
                     <h1 className="text-white text-center" style={{paddingBottom: 15}}>
