@@ -30,15 +30,15 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <ol className="nav-menu">
-                        <li className="menu-item">
-                            <a><Trans>Services</Trans></a>
+                        <li className="menu-item menu-dropdown">
+                            <a data-toggle="submenu"><Trans>Services</Trans></a>
                             <ol className="sub-menu">
                                 <li className="menu-item"><a href="#0"><Trans>APIs</Trans></a></li>
                                 <li className="menu-item"><a href="#0"><Trans>Tools</Trans></a></li>
                             </ol>
                         </li>
-                        <li className="menu-item">
-                            <a><Trans>SDKs</Trans></a>
+                        <li className="menu-item menu-dropdown">
+                            <a data-toggle="submenu"><Trans>SDKs</Trans></a>
                             <ol className="sub-menu">
                                 <li className="menu-item"><MenuLink to="/did"><Trans>DID</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/hive"><Trans>Hive</Trans></MenuLink></li>
@@ -46,23 +46,23 @@ const Navbar = () => {
                                 <li className="menu-item"><MenuLink to="/wallet"><Trans>Wallet</Trans></MenuLink></li>
                             </ol>
                         </li>
-                        <li className="menu-item">
-                            <a><Trans>Apps</Trans></a>
+                        <li className="menu-item menu-dropdown">
+                            <a data-toggle="submenu"><Trans>Apps</Trans></a>
                             <ol className="sub-menu">
                                 <li className="menu-item"><MenuLink to="/essentials"><Trans>Essentials</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/feeds"><Trans>Feeds</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/pasar"><Trans>Pasar</Trans></MenuLink></li>
                             </ol>
                         </li>
-                        <li className="menu-item">
-                            <a><Trans>About</Trans></a>
+                        <li className="menu-item menu-dropdown">
+                            <a data-toggle="submenu"><Trans>About</Trans></a>
                             <ol className="sub-menu">
                                 <li className="menu-item"><MenuLink to="/team"><Trans>Team</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/contact"><Trans>Contact</Trans></MenuLink></li>
                             </ol>
                         </li>
-                        <li className="menu-item">
-                            <a>{languageTypes[currentLngId].name}</a>
+                        <li className="menu-item menu-dropdown">
+                            <a data-toggle="submenu">{languageTypes[currentLngId].name}</a>
                             <ol className="sub-menu">
                                 {
                                     languageTypes.map((lng, _i)=>(

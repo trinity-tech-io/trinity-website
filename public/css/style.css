@@ -532,11 +532,14 @@ iframe {
     width: 5px;
     height: 5px;
 }
+.nav-menu > li.active,
 .nav-menu > li:focus,
 .nav-menu > li:focus-within,
 .nav-menu > li:hover {
     z-index:100;
 }
+
+.nav-menu > li.active::after,
 .nav-menu > li:focus::after,
 .nav-menu > li:focus-within::after,
 .nav-menu > li:hover::after {
@@ -545,10 +548,12 @@ iframe {
     opacity: 1;
 }
 
+.nav-menu > li.active .sub-menu,
 .nav-menu > li:focus .sub-menu,
 .nav-menu > li:focus-within .sub-menu {
     max-height:500px;
 }
+.nav-menu > li.active a::before,
 .nav-menu > li:focus a::before,
 .nav-menu > li:focus-within a::before {
     transform:rotate(-45deg);
@@ -633,6 +638,7 @@ iframe {
         width:120px;
         margin-bottom: 0px;
     }
+    .nav-menu > li.active::after,
     .nav-menu > li:hover::after,
     .nav-menu > li:focus::after,
     .nav-menu > li:focus-within::after {
@@ -643,6 +649,7 @@ iframe {
         left: -5px;
         right: -5px;
     }
+    .nav-menu > li.active .sub-menu,
     .nav-menu > li:hover .sub-menu,
     .nav-menu > li:focus .sub-menu,
     .nav-menu > li:focus-within .sub-menu
@@ -653,7 +660,8 @@ iframe {
     .nav-menu > li a:not(:last-child)::before{
         right:12.5px;
     }
-        
+    
+    .nav-menu > li.active a::before,
     .nav-menu > li:hover a::before{
         transform:rotate(-45deg);
     }
