@@ -1,4 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Essentials = () => {
     const specTypes = [
@@ -21,7 +23,14 @@ const Essentials = () => {
             <div className="face-container height-100vh"  style={{display: 'flex'}}>
                 <div className="app-face-case">
                     <div className="app-face-box">
-                        <div className="face-img" style={{ background: `url(/images/apps/Essentials.svg) left center / contain no-repeat` }}/>
+                        {/* <div className="face-img" style={{ background: `url(/images/apps/Essentials.svg) left center / contain no-repeat` }}/> */}
+                        <LazyLoadImage 
+                            className="no-user-select"
+                            src='images/apps/Essentials.svg'
+                            effect="blur" 
+                            wrapperClassName='img-wrapper'
+                        />
+                        {/* <img src="images/apps/Essentials.svg" style={{width: '100%', height: '100%'}}/> */}
                         <div className="title-box">
                             <p>Apps</p>
                             <h1 className="title no-user-select">Essentials</h1>
@@ -30,7 +39,12 @@ const Essentials = () => {
                 </div>
                 <div className="phone-view-case">
                     <div className="phone-view-box">
-                        <img className="no-user-select" src="images/apps/phone-EE.png"/>
+                        <LazyLoadImage 
+                            className="no-user-select"
+                            src='images/apps/phone-EE.png'
+                            effect="blur" 
+                            wrapperClassName='img-wrapper'
+                        />
                         <div className="hide-box"/>
                     </div>
                 </div>
@@ -52,7 +66,14 @@ const Essentials = () => {
                     <div className="phone-view-box for-spec">
                         {
                             specTypes.map((_, _i)=>(
-                                <img className={_i===specTab?'active':''} src={`images/apps/phone-${_i+1}.png`} key={_i}/>
+                                <LazyLoadImage 
+                                    className="no-user-select"
+                                    src={`images/apps/phone-${_i+1}.png`}
+                                    effect="blur" 
+                                    wrapperClassName={_i===specTab?'img-wrapper active':'img-wrapper'}
+                                    key={_i}
+                                />
+                                // <img className={_i===specTab?'active':''} src={`images/apps/phone-${_i+1}.png`} key={_i}/>
                             ))
                         }
                         <div className="blur-back purple-box"/>
