@@ -1,4 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Feeds = () => {
     const specTypes = [
@@ -20,7 +22,12 @@ const Feeds = () => {
             <div className="face-container height-100vh"  style={{display: 'flex'}}>
                 <div className="app-face-case">
                     <div className="app-face-box">
-                        <div className="face-img" style={{ background: `url(/images/apps/Feeds.svg) left center / contain no-repeat` }}/>
+                        <LazyLoadImage 
+                            className="no-user-select"
+                            src='images/apps/Feeds.svg'
+                            effect="blur" 
+                            wrapperClassName='img-wrapper'
+                        />
                         <div className="title-box" style={{ top: '20%' }}>
                             <p>Apps</p>
                             <h1 className="title no-user-select">Feeds</h1>
@@ -29,7 +36,12 @@ const Feeds = () => {
                 </div>
                 <div className="phone-view-case">
                     <div className="phone-view-box">
-                        <img className="no-user-select" src="images/apps/phone-Feeds.png"/>
+                        <LazyLoadImage 
+                            className="no-user-select"
+                            src='images/apps/phone-Feeds.png'
+                            effect="blur" 
+                            wrapperClassName='img-wrapper'
+                        />
                         <div className="hide-box"/>
                     </div>
                 </div>
@@ -65,7 +77,12 @@ const Feeds = () => {
             <div className="face-container for-feeds">
                 <div className="phone-view-case for-spec">
                     <div className="phone-view-box for-spec">
-                        <img className='active' src={`images/apps/phone-Feeds-1.png`}/>
+                        <LazyLoadImage 
+                            className="no-user-select"
+                            src='images/apps/phone-Feeds-1.png'
+                            effect="blur" 
+                            wrapperClassName='img-wrapper active'
+                        />
                         <div className="blur-back purple-box"/>
                         <div className="blur-back blue-box"/>
                     </div>
@@ -73,7 +90,12 @@ const Feeds = () => {
                 <div className='spec-container'>
                     <div className="row padding-x-20 margin-t-50">
                         <div className="col-sm-12 text-center">
-                            <img className="Feeds-mark no-user-select" src='/images/apps/FeedsLogo.svg'/>
+                            <LazyLoadImage 
+                                className="no-user-select"
+                                src='images/apps/FeedsLogo.svg'
+                                effect="blur" 
+                                wrapperClassName='Feeds-mark'
+                            />
                         </div>
                         <div className="col-sm-12">
                             <h3 className="EE-title text-white text-center">Feeds. Web3 Social Network.</h3>

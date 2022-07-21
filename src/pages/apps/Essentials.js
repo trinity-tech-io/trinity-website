@@ -23,14 +23,12 @@ const Essentials = () => {
             <div className="face-container height-100vh"  style={{display: 'flex'}}>
                 <div className="app-face-case">
                     <div className="app-face-box">
-                        {/* <div className="face-img" style={{ background: `url(/images/apps/Essentials.svg) left center / contain no-repeat` }}/> */}
                         <LazyLoadImage 
                             className="no-user-select"
                             src='images/apps/Essentials.svg'
                             effect="blur" 
                             wrapperClassName='img-wrapper'
                         />
-                        {/* <img src="images/apps/Essentials.svg" style={{width: '100%', height: '100%'}}/> */}
                         <div className="title-box">
                             <p>Apps</p>
                             <h1 className="title no-user-select">Essentials</h1>
