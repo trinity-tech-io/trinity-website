@@ -1,4 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import ConicGradiSection from '../../components/ConicGradiSection';
 
 const Team = () => {
@@ -16,12 +18,18 @@ const Team = () => {
                     <div className="row margin-t-50" style={{padding: '0 10%', marginBottom: 100}}>
                         {
                             TeamMembers.map((member, _i)=>(
-                                <div className="col-lg-6 col-sm-6" key={_i}>
+                                <div className="col-sm-6" key={_i}>
                                     <div className="team-box text-center hover-effect">
                                         <div className="team-wrapper">
                                             <div className="back-drop"/>
                                             <div className="team-member">
-                                                <img alt="" src={`images/team/${member.photo}`} className="img-fluid rounded" />
+                                                <LazyLoadImage 
+                                                    className="no-user-select"
+                                                    src={`images/team/${member.photo}`}
+                                                    effect="blur" 
+                                                    wrapperClassName='img-wrapper rounded'
+                                                />
+                                                {/* <img alt="" src={`images/team/${member.photo}`} className="img-fluid rounded" /> */}
                                             </div>
                                         </div>
                                         <div className="team-member-detail">

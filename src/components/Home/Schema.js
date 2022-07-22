@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 class Schema extends React.Component {
   render() {
@@ -21,8 +23,19 @@ class Schema extends React.Component {
                 <div className="phone-img-box">
                     <div className="back-light"/>
                     <div className="phone-img-wrapper">
-                        <img src="images/phone1.png" alt=""/>
-                        <img src="images/phone2.svg" alt=""/>
+                        <LazyLoadImage 
+                            className="no-user-select"
+                            src='images/phone1.png'
+                            effect="blur" 
+                            wrapperClassName='img-wrapper'
+                        />
+                        <LazyLoadImage 
+                            className="no-user-select"
+                            src='images/phone2.svg'
+                            effect="blur" 
+                            wrapperClassName='img-wrapper'
+                        />
+                        {/* <img src="images/phone2.svg" alt=""/> */}
                     </div>
                     <div className="hide-box"/>
                 </div>

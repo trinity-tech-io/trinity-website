@@ -1091,6 +1091,10 @@ iframe {
     -webkit-user-drag: none;
     -moz-user-select: none;
 }
+.team-member>.img-wrapper>img {
+    width: 100%;
+    height: 100%;
+}
 .team-member-detail {
     text-align: left;
     padding: 0 20px;
@@ -1871,11 +1875,7 @@ textarea.form-control::-webkit-scrollbar-thumb {
     display: inline-flex;
     padding-right: 180px;
 }
-.phone-img-wrapper>img {
-    user-select: none;
-    -webkit-user-drag: none;
-}
-.phone-img-wrapper>img:last-child {
+.phone-img-wrapper>.img-wrapper:last-child {
     position: absolute;
     left: 415px;
     top: 130px;
