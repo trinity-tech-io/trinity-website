@@ -78,7 +78,7 @@ const Pasar = () => {
                                 Pasar. Decentralized NFT Marketplace.
                             </h3>
                         </div>
-                        <button className="btn btn-browse">Browse Pasar</button>
+                        <a className="btn btn-browse" href="https://pasarprotocol.io" target="_blank">Browse Pasar</a>
                     </div>
                 </div>
                 <div className="col-sm-4">

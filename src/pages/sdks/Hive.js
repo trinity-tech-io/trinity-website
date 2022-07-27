@@ -8,7 +8,8 @@ const Hive = () => {
         aboutA: [ 
             "Hive allows you to choose where you let applications store you data, should this be on a chosen commercial Hive service, or home on your own Elabox.",
             "Secured by Elastos DIDs authentication."
-        ]
+        ],
+        guideLink: "https://docs.elastos.org/guides/v/hive/"
     }
     return <SdkTemplate {...props}/>
 }

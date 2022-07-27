@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const SdkTemplate = (props) => {
-    const { type='', aboutQ='', aboutA='' } = props
+    const { type='', aboutQ='', aboutA='', guideLink='' } = props
 
     return (
         <div className="container">
@@ -62,7 +62,7 @@ const SdkTemplate = (props) => {
                         Available for Typescript, Java, Swift and C.
                     </h3>
                 </div>
-                <button className="btn btn-start">Get Started</button>
+                <a className="btn btn-start" href={guideLink} target="_blank">Get Started</a>
             </div>
         </div>
     );
