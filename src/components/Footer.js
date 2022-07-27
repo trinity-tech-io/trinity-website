@@ -29,8 +29,8 @@ const Footer = () => {
                         <div className="text-muted margin-t-20">
                             <ul className="list-unstyled footer-list">
                                 <li><a href="https://www.cyberrepublic.org/" target='_blank'>Cyber Republic</a></li>
-                                <li><a href="https://www.elastos.org/" target='_blank'>Elastos.org</a></li>
-                                <li><a href="https://www.elastos.info/" target='_blank'>Elastos-info</a></li>
+                                <li><a href="https://www.elastos.org/" target='_blank'>Elastos Foundation</a></li>
+                                <li><a href="https://www.elastos.info/" target='_blank'>Elastos Info</a></li>
                             </ul>
                         </div>
                     </div>
@@ -39,9 +39,9 @@ const Footer = () => {
                         <div className="text-muted margin-t-20">
                             <ul className="list-unstyled footer-list">
                                 <li><a href="https://docs.elastos.org/guides/v/mainchain/" target='_blank'>Mainchain</a></li>
-                                <li><a href="https://docs.elastos.org/guides/v/esc/" target='_blank'>Smart Chain</a></li>
-                                <li><a href="https://docs.elastos.org/guides/v/eid/" target='_blank'>ID Chain</a></li>
-                                <li><a href="https://elastos.info/academy/elastos-developers-guide/" target='_blank'>Dev Portal</a></li>
+                                <li><a href="https://docs.elastos.org/guides/v/esc/" target='_blank'>Smartchain</a></li>
+                                <li><a href="https://docs.elastos.org/guides/v/eid/" target='_blank'>Identity Chain</a></li>
+                                <li><a href="https://elastos.info/academy/elastos-developers-guide/" target='_blank'>Elastos Academy</a></li>
                             </ul>
                         </div>
                     </div>
