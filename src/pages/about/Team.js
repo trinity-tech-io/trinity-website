@@ -8,7 +8,7 @@ const Team = () => {
         { name: 'Tang Zhilong', designation: 'Founder, Hive SDK Team Leader,\nFeeds Team Leader', photo: 'm-01.png' },
         { name: 'Niu Jingyu', designation: 'Executive Team Leader,\nDID SDK Team Leader', photo: 'm-02.png' },
         { name: 'Benjamin Piette', designation: 'Essentials Wallet Team Leader', photo: 'm-03.png' },
-        { name: 'Danial Asralf', designation: 'Pasar Team Leader', photo: 'm-04.png' },
+        { name: 'Danial Asraf', designation: 'Pasar Team Leader', photo: 'm-04.png' },
     ]
     return (
         <>

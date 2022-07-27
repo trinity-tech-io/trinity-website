@@ -31,13 +31,6 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <ol className="nav-menu">
                         <li className="menu-item menu-dropdown">
-                            <a data-toggle="submenu"><Trans>Services</Trans></a>
-                            <ol className="sub-menu">
-                                <li className="menu-item"><a href="#0"><Trans>APIs</Trans></a></li>
-                                <li className="menu-item"><a href="#0"><Trans>Tools</Trans></a></li>
-                            </ol>
-                        </li>
-                        <li className="menu-item menu-dropdown">
                             <a data-toggle="submenu"><Trans>SDKs</Trans></a>
                             <ol className="sub-menu">
                                 <li className="menu-item"><MenuLink to="/did"><Trans>DID</Trans></MenuLink></li>
@@ -52,6 +45,13 @@ const Navbar = () => {
                                 <li className="menu-item"><MenuLink to="/essentials"><Trans>Essentials</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/feeds"><Trans>Feeds</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/pasar"><Trans>Pasar</Trans></MenuLink></li>
+                            </ol>
+                        </li>
+                        <li className="menu-item menu-dropdown">
+                            <a data-toggle="submenu"><Trans>Services</Trans></a>
+                            <ol className="sub-menu">
+                                <li className="menu-item"><a href="#0"><Trans>APIs</Trans></a></li>
+                                <li className="menu-item"><a href="#0"><Trans>Tools</Trans></a></li>
                             </ol>
                         </li>
                         <li className="menu-item menu-dropdown">
