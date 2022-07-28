@@ -12,6 +12,7 @@ import Essentials from '../pages/apps/Essentials';
 import Feeds from '../pages/apps/Feeds';
 import Pasar from '../pages/apps/Pasar';
 import Elab from '../pages/apps/Elab';
+import KYCme from '../pages/apps/KYCme';
 import Layout from '../layout';
 
 // ----------------------------------------------------------------------
@@ -35,6 +36,7 @@ export default function Router() {
           <Route path="feeds" element={<Feeds />} />
           <Route path="pasar" element={<Pasar />} />
           <Route path="elab" element={<Elab />} />
+          <Route path="kycme" element={<KYCme />} />
         </Route>
       </Routes>
   )

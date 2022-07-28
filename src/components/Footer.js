@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const { pathname } = useLocation()
-    const footerBgTypes = ['did', 'hive', 'carrier', 'wallet', 'essentials', 'feeds', 'pasar', 'elab']
+    const footerBgTypes = ['did', 'hive', 'carrier', 'wallet', 'essentials', 'feeds', 'pasar', 'elab', 'kycme']
     let footerBgClass = ''
     for(let i=0; i<footerBgTypes.length; i++) {
         if(pathname.startsWith(`/${footerBgTypes[i]}`)){
