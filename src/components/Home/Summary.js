@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const sdkFeatureTypes = ['DID', 'Hive', 'Carrier', 'Wallet']
 const appFeatureTypes = ['Essentials', 'Feeds', 'Pasar']
+const colorByType = {'DID': '#3FFF7B', 'Hive': '#FF8A00', 'Carrier': '#4AA5FF', 'Wallet': '#9000F4', 'Essentials': '#FFFFFF', 'Feeds': '#7624FE', 'Pasar': '#FF5082'}
 class Summary extends React.Component {
     render() {
         let title = 'Elastos SDKs'
@@ -30,17 +31,32 @@ class Summary extends React.Component {
                     <div style={{maxWidth: '700px', paddingTop: 60}}>
                         <div className="row">
                             {
-                                featureTypes.map((type, _i)=>(
-                                    <div className="col-3" style={{paddingRight: '6%'}} key={_i}>
-                                        <div className="feature-tablet">
-                                            <div className="tablet-fill"/>
-                                            <div className="tablet-body" style={{padding: this.props.type == 'app' ? '23%' : '30%'}}>
-                                                <img src={`/images/features/${type}.svg`} style={{width: '100%'}}/>
-                                            </div>
+                                featureTypes.map((type, _i)=>{
+                                    const tabletStyle = {
+                                        '--hover-color': colorByType[type]
+                                    }
+                                    const iconStyle = {
+                                        mask: `url(/images/features/${type}.svg) no-repeat center`,
+                                        WebkitMask: `url(/images/features/${type}.svg) no-repeat center`,
+                                        maskSize: 'contain',
+                                        WebkitMaskSize: 'contain',
+                                    }
+                                    return (
+                                        <div className="col-3" style={{paddingRight: '6%'}} key={_i}>
+                                            <Link className="feature-tablet" to={type.toLowerCase()} style={tabletStyle}>
+                                                <div className="tablet-fill"/>
+                                                <div className="tablet-hover-back"/>
+                                                <div className="tablet-body" style={{ padding: this.props.type == 'app' ? '23%' : '30%' }}>
+                                                    <div className="tablet-icon-box">
+                                                        <div className="tablet-icon" style={iconStyle}/>
+                                                    </div>
+                                                    {/* <img src={`/images/features/${type}.svg`} style={{width: '100%'}}/> */}
+                                                </div>
+                                            </Link>
+                                            <h4 className="home-section-description text-white text-center">{type}</h4>
                                         </div>
-                                        <h4 className="home-section-description text-white text-center">{type}</h4>
-                                    </div>
-                                ))
+                                    )
+                                })
                             }
                         </div>
                     </div>

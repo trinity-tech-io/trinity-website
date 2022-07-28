@@ -1729,13 +1729,13 @@ textarea.form-control::-webkit-scrollbar-thumb {
     background: linear-gradient(360deg, #9000F470 0%, rgba(0, 0, 0, 0) 100%);
 }
 .footer-bg-essentials {
-    background: linear-gradient(360deg, #FFFFFF70 0%, rgba(0, 0, 0, 0) 100%);;
+    background: linear-gradient(360deg, #FFFFFF70 0%, rgba(0, 0, 0, 0) 100%);
 }
 .footer-bg-feeds {
-    background: linear-gradient(360deg, #7624FE70 0%, rgba(0, 0, 0, 0) 100%);;
+    background: linear-gradient(360deg, #7624FE70 0%, rgba(0, 0, 0, 0) 100%);
 }
 .footer-bg-pasar {
-    background: linear-gradient(360deg, #FF508270 0%, rgba(0, 0, 0, 0) 100%);;
+    background: linear-gradient(360deg, #FF508270 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .footer h4 {
@@ -1909,17 +1909,59 @@ textarea.form-control::-webkit-scrollbar-thumb {
 .feature-tablet>div.tablet-fill {
     margin-top: 100%;
 }
-.feature-tablet>div.tablet-body {
+.feature-tablet>.tablet-hover-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    background: var(--hover-color);
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+.feature-tablet>.tablet-body {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    border: 1px solid white;
+    border: 1px solid #adb5bd;
     border-radius: 20%;
     padding: 30%;
     justify-content: center;
     display: flex;
+    background-color: black;
+    transition: .3s;
+}
+.feature-tablet:hover>.tablet-hover-back {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px var(--hover-color);
+}
+.feature-tablet:hover>.tablet-body {
+    border-color: var(--hover-color);
+}
+.tablet-icon-box {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.tablet-icon-box>.tablet-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #adb5bd;
+    transition: .5s;
+}
+.tablet-body:hover>.tablet-icon-box {
+    filter: drop-shadow(0px 0px 5px var(--hover-color));
+    -webkit-filter: drop-shadow(0px 0px 5px var(--hover-color));
+    -moz-filter: drop-shadow(0px 0px 5px var(--hover-color));
+    -ms-filter: drop-shadow(0px 0px 5px var(--hover-color));
+    -o-filter: drop-shadow(0px 0px 5px var(--hover-color));
+}
+.tablet-body:hover .tablet-icon {
+    background-color: var(--hover-color);
 }
 @media (min-width: 500px) {
     .pre-text {
