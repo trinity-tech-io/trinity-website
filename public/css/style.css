@@ -1368,8 +1368,8 @@ iframe {
     max-width: 200px;
 }
 .EE-title {
-    padding-top: 4%;
-    font-size: 5vw;
+    padding-top: 3%;
+    font-size: 4vw;
 }
 .btn-apple,
 .btn-play {
@@ -1485,7 +1485,7 @@ iframe {
 }
 @media (min-width:600px){
     .EE-title {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 @media (min-width:800px){

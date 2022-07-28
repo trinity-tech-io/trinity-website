@@ -28,6 +28,10 @@ const Essentials = () => {
                             src='images/apps/Essentials.svg'
                             effect="blur" 
                             wrapperClassName='img-wrapper'
+                            style={{
+                                maxHeight: 500,
+                                objectPosition: 'left'
+                            }}
                         />
                         <div className="title-box">
                             <p>Apps</p>
