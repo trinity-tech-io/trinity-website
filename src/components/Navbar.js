@@ -45,7 +45,7 @@ const Navbar = () => {
                                 <li className="menu-item"><MenuLink to="/essentials"><Trans>Essentials</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/feeds"><Trans>Feeds</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/pasar"><Trans>Pasar</Trans></MenuLink></li>
-                                <li className="menu-item"><MenuLink to="/elab"><Trans>Elab</Trans></MenuLink></li>
+                                <li className="menu-item"><MenuLink to="/elab"><Trans>E-lab</Trans></MenuLink></li>
                                 <li className="menu-item"><MenuLink to="/kycme"><Trans>KYC-me</Trans></MenuLink></li>
                             </ol>
                         </li>

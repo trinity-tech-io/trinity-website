@@ -40,7 +40,7 @@ const Elab = () => {
                 </div>
                 <div className="col-sm-12 justify-content-center margin-t-50">
                     <p className="text-white" style={{fontSize: '14pt'}}>
-                       The main goal of E-lab is to fast-track project development of dApps utilizing Elastos infrastructure through community grant instead of requesting funds fromthe Cyber Republic DAO.
+                       The main goal of E-lab is to fast-track project development of dApps utilizing Elastos infrastructure through community grant instead of requesting funds from the Cyber Republic DAO.
                     </p>
                 </div>
             </div>
@@ -59,11 +59,11 @@ const Elab = () => {
                 </div>
                 <div className="col-sm-12 text-center pasar-title">
                     <h3 className="text-white text-center sdk-detail">
-                        Elab. Decentralized Community Kickstarter.
+                        E-lab. Decentralized Community Kickstarter.
                     </h3>
                 </div>
                 <div className="col-sm-12 text-center">
-                    <a className="btn btn-browse-elab" href="https://e-lab.io" target="_blank">Browse Elab</a>
+                    <a className="btn btn-browse-elab" href="https://e-lab.io" target="_blank">Browse E-lab</a>
                 </div>
                 <div className="elab-particle-box" style={{height: 150}}>
                     <div className="elab-particle size-1"/>
