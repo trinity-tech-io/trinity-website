@@ -376,6 +376,30 @@ iframe {
     background: #FF5082;
     box-shadow: 0px 0px 12px #FF5082 !important;
 }
+.btn-browse-elab {
+    background: transparent;
+    position: relative;
+    border-radius: 100px; 
+    color: white;
+}
+.btn-browse-elab::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100px; 
+    padding: 1px; 
+    background: linear-gradient(0deg, #FF71B9 0%, #FF8D5E 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+}
+.btn-browse-elab:hover {
+    transform: unset;
+    color: white;
+    background: linear-gradient(0deg, #FF71B9 0%, #FF8D5E 100%);
+}
 /*======================
   4.NAVBAR
   ======================*/
@@ -1470,6 +1494,42 @@ iframe {
 .pasar-box .pasar-title {
     padding: 25px 0 40px;
 }
+.elab-particle-box {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+.elab-particle {
+    position: absolute;
+    background: linear-gradient(180deg, #FF66DD 0%, #FF9838 100%);
+    box-shadow: 0px 0px 90px rgba(255, 152, 56, 0.6);
+    border-radius: 50%;
+}
+.elab-particle.size-1 {
+    width: 70px;
+    height: 70px;
+    transform: rotate(165deg);
+    right: 10%;
+}
+.elab-particle.size-2 {
+    width: 100px;
+    height: 100px;
+    transform: rotate(15deg);
+    left: 15%;
+    top: 55%;
+}
+.elab-particle.size-3 {
+    width: 130px;
+    height: 130px;
+    transform: rotate(-75deg);
+    right: 15%;
+}
+.elab-particle.size-4 {
+    width: 190px;
+    height: 190px;
+    left: 5%;
+    transform: rotate(135deg);
+}
 @media (max-width: 1199px){
     .spec-container {
         padding: 0
@@ -1736,6 +1796,9 @@ textarea.form-control::-webkit-scrollbar-thumb {
 }
 .footer-bg-pasar {
     background: linear-gradient(360deg, #FF508270 0%, rgba(0, 0, 0, 0) 100%);
+}
+.footer-bg-elab {
+    background: linear-gradient(360deg, #FF71B870 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .footer h4 {
@@ -2143,6 +2206,31 @@ textarea.form-control::-webkit-scrollbar-thumb {
     .for-feeds .phone-view-box.for-spec {
         height: 500px;
         justify-content: center;
+    }
+    .elab-particle.size-1 {
+        width: 30px;
+        height: 30px;
+        transform: rotate(165deg);
+        right: 10%;
+    }
+    .elab-particle.size-2 {
+        width: 60px;
+        height: 60px;
+        transform: rotate(15deg);
+        left: 15%;
+        top: 55%;
+    }
+    .elab-particle.size-3 {
+        width: 90px;
+        height: 90px;
+        transform: rotate(-75deg);
+        right: 15%;
+    }
+    .elab-particle.size-4 {
+        width: 130px;
+        height: 130px;
+        left: 5%;
+        transform: rotate(135deg);
     }
 }
 

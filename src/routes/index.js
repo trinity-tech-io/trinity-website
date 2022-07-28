@@ -11,6 +11,7 @@ import Wallet from '../pages/sdks/Wallet';
 import Essentials from '../pages/apps/Essentials';
 import Feeds from '../pages/apps/Feeds';
 import Pasar from '../pages/apps/Pasar';
+import Elab from '../pages/apps/Elab';
 import Layout from '../layout';
 
 // ----------------------------------------------------------------------
@@ -33,6 +34,7 @@ export default function Router() {
           <Route path="essentials" element={<Essentials />} />
           <Route path="feeds" element={<Feeds />} />
           <Route path="pasar" element={<Pasar />} />
+          <Route path="elab" element={<Elab />} />
         </Route>
       </Routes>
   )
