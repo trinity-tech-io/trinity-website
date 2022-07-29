@@ -35,8 +35,8 @@ export default function Router() {
           <Route path="essentials" element={<Essentials />} />
           <Route path="feeds" element={<Feeds />} />
           <Route path="pasar" element={<Pasar />} />
-          <Route path="elab" element={<Elab />} />
-          <Route path="kycme" element={<KYCme />} />
+          <Route path="e-lab" element={<Elab />} />
+          <Route path="kyc-me" element={<KYCme />} />
         </Route>
       </Routes>
   )

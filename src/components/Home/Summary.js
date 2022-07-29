@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const sdkFeatureTypes = ['DID', 'Hive', 'Carrier', 'Wallet']
-const appFeatureTypes = ['Essentials', 'Feeds', 'Pasar']
-const colorByType = {'DID': '#3FFF7B', 'Hive': '#FF8A00', 'Carrier': '#4AA5FF', 'Wallet': '#9000F4', 'Essentials': '#FFFFFF', 'Feeds': '#7624FE', 'Pasar': '#FF5082'}
+const appFeatureTypes = ['Essentials', 'Feeds', 'Pasar', 'E-lab', 'KYC-me']
+const colorByType = {'DID': '#3FFF7B', 'Hive': '#FF8A00', 'Carrier': '#4AA5FF', 'Wallet': '#9000F4', 'Essentials': '#FFFFFF', 'Feeds': '#7624FE', 'Pasar': '#FF5082', 'E-lab': '#FF71B8', 'KYC-me': '#4AB4F0'}
 class Summary extends React.Component {
     render() {
         let title = 'Elastos SDKs'
@@ -28,7 +28,7 @@ class Summary extends React.Component {
                             </h4>
                         </div>
                     </div>
-                    <div style={{maxWidth: '700px', paddingTop: 60}}>
+                    <div className="tablet-grid">
                         <div className="row">
                             {
                                 featureTypes.map((type, _i)=>{
@@ -42,7 +42,7 @@ class Summary extends React.Component {
                                         WebkitMaskSize: 'contain',
                                     }
                                     return (
-                                        <div className="col-3" style={{paddingRight: '6%'}} key={_i}>
+                                        <div className="col-3 tablet-card" key={_i}>
                                             <Link className="feature-tablet" to={type.toLowerCase()} style={tabletStyle}>
                                                 <div className="tablet-fill"/>
                                                 <div className="tablet-hover-back"/>

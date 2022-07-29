@@ -1974,6 +1974,13 @@ textarea.form-control::-webkit-scrollbar-thumb {
 /*=====================================
     HOME-SUMMARY
 ====================================*/
+.tablet-grid {
+    max-width: 875px;
+    padding-top: 60px;
+}
+.tablet-grid .tablet-card {
+    padding-right: 5%;
+}
 .feature-tablet {
     display: inline-block;
     position: relative;
@@ -2156,13 +2163,13 @@ textarea.form-control::-webkit-scrollbar-thumb {
     .phone-img-wrapper {
         padding-right: 0px;
     }
-    .phone-img-wrapper>img {
+    .phone-img-wrapper>.img-wrapper>img {
         width: 80%;
     }
-    .phone-img-wrapper>img:last-child {
+    .phone-img-wrapper>.img-wrapper:last-child {
         position: absolute;
-        left: unset;
-        right: -28%;
+        left: 40%;
+        right: -30%;
         top: 12%;
     }
 }
@@ -2243,7 +2250,11 @@ textarea.form-control::-webkit-scrollbar-thumb {
         transform: rotate(135deg);
     }
 }
-
+@media (min-width: 768px) {
+    .tablet-grid .tablet-card {
+        max-width: 20%;
+    }
+}
 @media (max-height: 420px) {
 	.navbar-collapse {
 	    max-height: 200px;
