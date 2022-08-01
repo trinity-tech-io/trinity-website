@@ -1,13 +1,37 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
+const sdkTypes = ["DID", "Hive", "Carrier", "Wallet"]
 const SdkTemplate = (props) => {
+    const navigate = useNavigate()
     const { type='', aboutQ='', aboutA='', guideLink='' } = props
-
+    const handleClickPrev = (e) => {
+        const prevIndex = sdkTypes.indexOf(type)-1
+        const prevType = sdkTypes[prevIndex]
+        navigate("/"+prevType)
+    }
+    const handleClickNext = (e) => {
+        const nextIndex = sdkTypes.indexOf(type)+1
+        const nextType = sdkTypes[nextIndex]
+        navigate("/"+nextType)
+    }
     return (
         <div className="container">
             <div className="face-container width-100vw height-100vh">
+                {
+                    type!='DID' && 
+                    <div className="switch-btn-box" style={{left: 0}}>
+                        <button class='btn switch-page-btn' onClick={handleClickPrev}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            prev
+                        </button>
+                    </div>
+                }
                 <div className="face-case">
                     <div className="face-box">
                         <LazyLoadImage 
@@ -22,6 +46,18 @@ const SdkTemplate = (props) => {
                         </div>
                     </div>
                 </div>
+                {
+                    type!='Wallet' && 
+                    <div className="switch-btn-box" style={{right: 0}}>
+                        <button class='btn switch-page-btn' onClick={handleClickNext}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            next
+                        </button>
+                    </div>
+                }
             </div>
             <div className="row justify-content-center padding-x-20" style={{marginBottom: 400}}>
                 <div className="col-sm-12">
