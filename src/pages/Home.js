@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation, Trans } from "react-i18next";
+import { Trans } from "react-i18next";
 import firebase from "firebase/compat/app";
 import { getAnalytics } from "firebase/analytics";
 
@@ -12,7 +12,7 @@ const app = firebase.initializeApp(firebaseConfig);
 getAnalytics(app);
 
 const Home = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <>
