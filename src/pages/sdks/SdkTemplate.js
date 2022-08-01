@@ -22,7 +22,7 @@ const SdkTemplate = (props) => {
       <div className="face-container width-100vw height-100vh">
         {type !== "DID" && (
           <div className="switch-btn-box" style={{ left: 0 }}>
-            <button class="btn switch-page-btn" onClick={handleClickPrev}>
+            <button className="btn switch-page-btn" onClick={handleClickPrev}>
               <span></span>
               <span></span>
               <span></span>
@@ -47,7 +47,7 @@ const SdkTemplate = (props) => {
         </div>
         {type !== "Wallet" && (
           <div className="switch-btn-box" style={{ right: 0 }}>
-            <button class="btn switch-page-btn" onClick={handleClickNext}>
+            <button className="btn switch-page-btn" onClick={handleClickNext}>
               <span></span>
               <span></span>
               <span></span>
