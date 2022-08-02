@@ -8,8 +8,10 @@ import Schema from "../components/Home/Schema";
 import Summary from "../components/Home/Summary";
 import { firebaseConfig } from "../config";
 
-const app = firebase.initializeApp(firebaseConfig);
-getAnalytics(app);
+if (firebaseConfig.apiKey) {
+  const app = firebase.initializeApp(firebaseConfig);
+  getAnalytics(app);
+}
 
 const Home = () => {
   // const { t } = useTranslation();
