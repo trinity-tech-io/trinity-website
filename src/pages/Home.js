@@ -1,7 +1,6 @@
 import React from "react";
 import { Trans } from "react-i18next";
 import firebase from "firebase/compat/app";
-import { getAnalytics } from "firebase/analytics";
 
 import ConicGradiSection from "../components/ConicGradiSection";
 import Schema from "../components/Home/Schema";
@@ -10,7 +9,7 @@ import { firebaseConfig } from "../config";
 
 if (firebaseConfig.apiKey) {
   const app = firebase.initializeApp(firebaseConfig);
-  getAnalytics(app);
+  firebase.analytics(app);
 }
 
 const Home = () => {
