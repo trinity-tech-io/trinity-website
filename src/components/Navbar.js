@@ -3,8 +3,15 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation, Trans } from "react-i18next";
 
 const MenuLink = (props) => (
-    <Link {...props} onClick={(e)=>{e.target.blur()}}>{props.children}</Link>
-)
+  <Link
+    {...props}
+    onClick={(e) => {
+      e.target.blur();
+    }}
+  >
+    {props.children}
+  </Link>
+);
 
 const MenuItems = [
     { 
