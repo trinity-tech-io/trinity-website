@@ -2159,7 +2159,9 @@ textarea.form-control::-webkit-scrollbar-thumb {
     .navbar-custom {
         margin-top: 0px;
         padding: 10px 0px !important;
-        background-color: #272a33 !important;
+        /* background-color: #272a33 !important; */
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(35px);
         box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
         color: #fff !important;
     }
@@ -2202,6 +2204,9 @@ textarea.form-control::-webkit-scrollbar-thumb {
         line-height: 24px;
     }
 
+    .navbar-custom .navbar-brand>img {
+        height: 40px;
+    }
     .bg-pattern-effect{
         bottom: -4px
     }
