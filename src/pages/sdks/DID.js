@@ -6,7 +6,7 @@ const DID = () => {
         type: "DID", 
         aboutQ: "What are Decentralized Identities (DIDs)?", 
         aboutA: "Verified decentralized digital identities or DIDs will be the user's passcode into the metaverse and Web3.",
-        guideLink: "https://docs.elastos.org/guides/v/elastos-decentralized-identity-did/"
+        guideLink: "https://docs.elastos.org/guides/v/did-identities/"
     }
     return <SdkTemplate {...props}/>
 }
