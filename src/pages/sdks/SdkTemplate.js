@@ -40,7 +40,7 @@ const SdkTemplate = (props) => {
               wrapperClassName="img-wrapper"
             />
             <div className="title-box">
-              <p>SDK</p>
+              <p>Javascript SDK</p>
               <h1 className="title no-user-select">{type}</h1>
             </div>
           </div>
@@ -97,12 +97,12 @@ const SdkTemplate = (props) => {
         </div>
         <div className="col-sm-12">
           <h1 className="text-white text-center" style={{ paddingBottom: 15 }}>
-            Start building with {type === "DID" ? `${type}s` : type}
+            Start building with the JS {type === "DID" ? `${type}s` : type}
           </h1>
         </div>
         <div className="col-sm-12 text-center" style={{ paddingBottom: 40 }}>
           <h3 className="text-white text-center sdk-description sdk-detail">
-            Available for Typescript, Java, Swift and C.
+            Available for Typescript
           </h3>
         </div>
         <a
